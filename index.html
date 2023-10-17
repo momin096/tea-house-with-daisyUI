@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWOSOME  -->
+    <script src="https://kit.fontawesome.com/d0caab4d70.js" crossorigin="anonymous"></script>
+
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+        <!-- Tailwind Custom color -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
+
+
+        <style>
+            .font-manrope{
+                font-family: 'Manrope', sans-serif;
+            }
+        </style>
+</head>
+
+<body class="font-manrope">
+    <header>
+        <div class="hero min-h-screen bg-base-200 ">
+            <div class="hero-content flex-col lg:flex-row gap-36">
+              <div>
+                <h1 class="text-7xl font-bold lg:font-extrabold">It's good <br>
+                    tea time at The <br>
+                    Tea House</h1>
+                <p class="py-6 font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary font-bold">Explore More</button>
+              </div>
+              <div class="relative"> 
+                <img src="./images/banner.png" class="max-w-sm w-full pb-6 "/>
+
+                <!-- rating batch -->
+                <div class="flex items-center gap-4 p-5 rounded-lg w-60  bg-white absolute top-40 lg:top-56 lg:right-44 " > 
+                    <div>
+                        <i class="fa-solid fa-star text-3xl font-extrabold" style="color: #ffc800;"></i>
+                    </div>
+                    <div >
+                        <h3 class="text-3xl font-extrabold">5.00</h3>
+                        <p class="font-semibold">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+              </div>
+          </div>
+    </header>
+</body>
+
+</html>
